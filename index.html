@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO META -->
+  <title>Firma Budowlana Kartuzy | Budowa Domów, Remonty, Wykończenia Wnętrz</title>
+  <meta name="description" content="Profesjonalna firma budowlana z Kartuz. Budowa domów, remonty, wykończenia wnętrz i usługi budowlane. Ponad 15 lat doświadczenia w regionie. Zadzwoń i uzyskaj bezpłatną wycenę!" />
+  <meta name="keywords" content="firma budowlana Kartuzy, usługi budowlane Kartuzy, budowa domów Kartuzy, remonty Kartuzy, wykończenia wnętrz Kartuzy, firma budowlana Trójmiasto, remonty Kaszuby" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Kobiel Budownictwo" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Firma Budowlana Kartuzy | Kobiel Budownictwo" />
+  <meta property="og:description" content="Profesjonalna firma budowlana z Kartuz. Budowa domów, remonty, wykończenia wnętrz." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://kobiel-budownictwo.pl/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" aria-label="Nawigacja główna">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="#" class="navbar__logo">Kobiel <span>Budownictwo</span></a>
+        <ul class="navbar__nav">
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#onas">O nas</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#kontakt" class="navbar__cta">Bezpłatna wycena</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Otwórz menu" id="hamburger" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#oferta"  onclick="closeMenu()">Oferta</a>
+      <a href="#onas"    onclick="closeMenu()">O nas</a>
+      <a href="#galeria" onclick="closeMenu()">Galeria</a>
+      <a href="#kontakt" onclick="closeMenu()">Kontakt i wycena</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Baner główny">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge">Kartuzy i okolice &middot; od 2015 roku</div>
+          <h1>Firma budowlana<br />na <em>Kaszubach</em></h1>
+          <p class="hero__desc">
+            Budujemy domy, przeprowadzamy remonty i realizujemy wykończenia wnętrz
+            z dbałością o każdy detal. Zaufaj lokalnej firmie z ponad 10-letnim
+            doświadczeniem na Kaszubach.
+          </p>
+          <div class="hero__actions">
+            <a href="tel:+48500000000" class="btn btn-primary">&#128222; Zadzwoń teraz</a>
+            <a href="#kontakt" class="btn btn-outline">Bezpłatna wycena</a>
+          </div>
+        </div>
+        <div class="hero__image-wrap">
+          <img
+            src="hero-bg.jpg"
+            alt="Firma budowlana Kobiel – realizacja budowy domu w Kartuzy"
+            class="hero__image"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="hero__stats">
+      <div class="container">
+        <div class="hero__stats-inner">
+          <div>
+            <span class="hero__stat-num">10+</span>
+            <span class="hero__stat-label">Lat doświadczenia</span>
+          </div>
+          <div>
+            <span class="hero__stat-num">120+</span>
+            <span class="hero__stat-label">Realizacji</span>
+          </div>
+          <div>
+            <span class="hero__stat-num">100%</span>
+            <span class="hero__stat-label">Zadowolonych klientów</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section id="oferta" class="section section--grey">
+    <div class="container">
+      <header class="section-header section-header--center fade-in">
+        <p class="section-tag">Nasze usługi budowlane</p>
+        <h2 class="section-title">Co możemy dla Ciebie zbudować?</h2>
+        <p class="section-desc">
+          Oferujemy kompleksowe usługi budowlane w Kartuzy i okolicach.
+          Od projektu po klucz – wszystko w jednym miejscu.
+        </p>
+      </header>
+
+      <div class="services-grid">
+        <article class="service-card fade-in">
+          <div class="service-icon">&#127968;</div>
+          <h3>Budowa domów</h3>
+          <p>
+            Budujemy domy jednorodzinne od fundamentów po dach. Prace prowadzone
+            terminowo, z materiałów najwyższej jakości. Obsługujemy projekty
+            typowe i indywidualne na terenie powiatu kartuskiego i okolic.
+          </p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-icon">&#128296;</div>
+          <h3>Remonty mieszkań i domów</h3>
+          <p>
+            Kompleksowe i częściowe remonty pod klucz. Wymiana instalacji,
+            tynkowanie, układanie płytek, malowanie, gładzie gipsowe. Działamy
+            szybko i bez zbędnego bałaganu.
+          </p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-icon">&#10024;</div>
+          <h3>Wykończenia wnętrz</h3>
+          <p>
+            Zamieniamy surowe ściany w przestrzeń, w której chce się żyć.
+            Posadzki, sufity podwieszane, łazienki, kuchnie – każde wykończenie
+            z dbałością o estetykę i trwałość.
+          </p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-icon">&#127959;</div>
+          <h3>Inne usługi budowlane</h3>
+          <p>
+            Murowanie, ocieplanie budynków, budowa garaży, altanek i tarasów,
+            ogrodzenia, prace ziemne oraz wyburzenia. Każde zlecenie wyceniamy
+            indywidualnie i bezpłatnie.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- O NAS -->
+  <section id="onas" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap fade-in">
+          <img
+            src="budowa.jpg"
+            alt="Ekipa firmy budowlanej Kobiel Budownictwo podczas pracy na budowie w Kartuzy"
+            loading="lazy"
+          />
+          <div class="about-badge">
+            <span class="about-badge__num">10+</span>
+            <span class="about-badge__text">Lat<br />na rynku</span>
+          </div>
+        </div>
+
+        <div class="about-content fade-in">
+          <p class="section-tag">O firmie</p>
+          <h2 class="section-title">Budujemy<br />z pasją i doświadczeniem</h2>
+          <p class="section-desc">
+            Jesteśmy lokalną firmą budowlaną z siedzibą w Kartuzy. Od 2008 roku
+            realizujemy zlecenia dla klientów indywidualnych i firm z regionu
+            Kaszub i Trójmiasta. Nasz zespół to doświadczeni fachowcy, którym
+            można zaufać.
+          </p>
+
+          <ul>
+            <li>Ponad 320 zrealizowanych projektów budowlanych na Kaszubach</li>
+            <li>Własna ekipa – bez pośredników i podwykonawców</li>
+            <li>Terminowość i transparentna wycena bez niespodzianek</li>
+            <li>Gwarancja jakości na wszystkie wykonane prace</li>
+            <li>Znamy specyfikę lokalnego budownictwa w regionie Kartuz</li>
+          </ul>
+
+          <a href="#kontakt" class="btn btn-primary">Skontaktuj się z nami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="section section--grey">
+    <div class="container">
+      <header class="section-header section-header--center fade-in">
+        <p class="section-tag">Galeria realizacji</p>
+        <h2 class="section-title">Nasze prace mówią same za siebie</h2>
+        <p class="section-desc">
+          Przejrzyj wybrane realizacje firmy budowlanej Kobiel z Kartuz –
+          budowy domów, remonty i wykończenia wnętrz.
+        </p>
+      </header>
+
+      <div class="gallery-grid fade-in">
+        <figure class="gallery-item">
+          <img
+            src="1.jpg"
+            alt="Realizacja budowy domu jednorodzinnego w Kartuzy – firma budowlana Kobiel"
+            loading="lazy"
+          />
+          <div class="gallery-item__overlay">
+            <figcaption class="gallery-item__caption">Budowa domu jednorodzinnego &middot; Kartuzy</figcaption>
+          </div>
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            src="3.jpg"
+            alt="Wykończenie i remont łazienki – usługi budowlane Kartuzy"
+            loading="lazy"
+          />
+          <div class="gallery-item__overlay">
+            <figcaption class="gallery-item__caption">Budowa domu &middot; Kartuzy</figcaption>
+          </div>
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            src="4.jpg"
+            alt="Fundamenty – firma budowlana Kobiel Kartuzy"
+            loading="lazy"
+          />
+          <div class="gallery-item__overlay">
+            <figcaption class="gallery-item__caption">Fundamenty &middot; Żukowo</figcaption>
+          </div>
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            src="5.jpg"
+            alt="Piwnica – usługi budowlane w okolicach Kartuz"
+            loading="lazy"
+          />
+          <div class="gallery-item__overlay">
+            <figcaption class="gallery-item__caption">Piwnica &middot; Sierakowice</figcaption>
+          </div>
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            src="2.jpg"
+            alt="Fundamenty i prace zewnętrzne – firma budowlana Kaszuby"
+            loading="lazy"
+          />
+          <div class="gallery-item__overlay">
+            <figcaption class="gallery-item__caption">fundamenty &middot; Przodkowo</figcaption>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="section">
+    <div class="container">
+      <header class="section-header section-header--center fade-in">
+        <p class="section-tag">Kontakt</p>
+        <h2 class="section-title">Zapytaj o bezpłatną wycenę</h2>
+        <p class="section-desc">
+          Napisz lub zadzwoń – odpowiadamy w ciągu 24 godzin.
+          Pierwsza wycena jest zawsze bezpłatna i niezobowiązująca.
+        </p>
+      </header>
+
+      <div class="contact-grid fade-in">
+        <div class="contact-info">
+          <a href="tel:+48500000000" class="contact-phone">
+            <div class="contact-phone__icon">&#128222;</div>
+            <div>
+              <div class="contact-phone__label">Zadzwoń do nas</div>
+              <div class="contact-phone__num">+48 500 000 000</div>
+            </div>
+          </a>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">&#128205;</div>
+            <div>
+              <div class="contact-detail__label">Adres</div>
+              <div class="contact-detail__value">ul. Kościerska 12, 83-300 Kartuzy</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">&#9993;</div>
+            <div>
+              <div class="contact-detail__label">E-mail</div>
+              <div class="contact-detail__value">biuro@kobiel-budownictwo.pl</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">&#128336;</div>
+            <div>
+              <div class="contact-detail__label">Godziny pracy</div>
+              <div class="contact-detail__value">Pn–Pt: 7:00–18:00 &nbsp;|&nbsp; Sb: 8:00–14:00</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">&#127758;</div>
+            <div>
+              <div class="contact-detail__label">Obszar działania</div>
+              <div class="contact-detail__value">Kartuzy, Żukowo, Przodkowo, Sierakowice, Trójmiasto i okolice</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div id="formContent">
+            <h3>Napisz do nas</h3>
+            <p>Wypełnij formularz, a odezwiemy się najszybciej jak to możliwe.</p>
+
+            <form id="contactForm" novalidate onsubmit="handleSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Imię i nazwisko *</label>
+                  <input type="text" id="name" name="name" placeholder="Jan Kowalski" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Telefon *</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+48 500 000 000" required autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Rodzaj usługi</label>
+                <select id="service" name="service">
+                  <option value="">Wybierz usługę (opcjonalnie)</option>
+                  <option value="budowa">Budowa domu</option>
+                  <option value="remont">Remont mieszkania / domu</option>
+                  <option value="wykonczenie">Wykończenie wnętrz</option>
+                  <option value="inne">Inna usługa budowlana</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Wiadomość *</label>
+                <textarea
+                  id="message" name="message"
+                  placeholder="Opisz krótko zakres prac, lokalizację i preferowany termin realizacji..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="form-submit">Wyślij zapytanie &#8594;</button>
+              <p class="form-note">
+                Klikając „Wyślij", zgadzasz się na przetwarzanie danych zgodnie z RODO.<br />
+                Twoje dane nie będą udostępniane osobom trzecim.
+              </p>
+            </form>
+          </div>
+
+          <div class="form-success" id="formSuccess">
+            <div class="form-success__icon">&#9989;</div>
+            <h4>Wiadomość wysłana!</h4>
+            <p>Dziękujemy za zapytanie. Skontaktujemy się z Tobą w ciągu 24 godzin roboczych.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Kobiel <span>Budownictwo</span></h2>
+          <p>
+            Lokalna firma budowlana z siedzibą w Kartuzy. Ponad 15 lat doświadczenia
+            w budowie domów, remontach i wykończeniach wnętrz na Kaszubach i Trójmieście.
+          </p>
+        </div>
+        <div>
+          <h4>Usługi</h4>
+          <ul>
+            <li><a href="#oferta">Budowa domów</a></li>
+            <li><a href="#oferta">Remonty</a></li>
+            <li><a href="#oferta">Wykończenia wnętrz</a></li>
+            <li><a href="#oferta">Inne usługi budowlane</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Firma</h4>
+          <ul>
+            <li><a href="#onas">O nas</a></li>
+            <li><a href="#galeria">Galeria realizacji</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#kontakt">Bezpłatna wycena</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Kobiel Budownictwo &middot; NIP: 000-000-00-00 &middot; Kartuzy</span>
+        <span>Firma budowlana Kartuzy &middot; Kaszuby &middot; Trójmiasto</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING PHONE BUTTON -->
+  <a href="tel:+48500000000" class="float-phone" aria-label="Zadzwoń do firmy budowlanej Kobiel Kartuzy" title="Zadzwoń teraz">
+    &#128222;
+  </a>
+
+  <script>
+    // Mobile menu
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+    function closeMenu() {
+      document.getElementById('hamburger').classList.remove('open');
+      document.getElementById('mobileNav').classList.remove('open');
+    }
+
+    // Scroll fade-in
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(function(el, i) {
+      el.style.transitionDelay = (i % 4) * 0.08 + 's';
+      observer.observe(el);
+    });
+
+    // Navbar scroll
+    window.addEventListener('scroll', function() {
+      var nav = document.querySelector('.navbar');
+      nav.style.background = window.scrollY > 60
+        ? 'rgba(13,27,42,0.98)'
+        : 'rgba(13,27,42,0.92)';
+    });
+
+    // Form submit (demo)
+    function handleSubmit(e) {
+      e.preventDefault();
+      var name    = document.getElementById('name').value.trim();
+      var phone   = document.getElementById('phone').value.trim();
+      var message = document.getElementById('message').value.trim();
+      if (!name || !phone || !message) {
+        alert('Proszę wypełnić wszystkie wymagane pola (*).');
+        return;
+      }
+      document.getElementById('formContent').style.display = 'none';
+      document.getElementById('formSuccess').style.display  = 'block';
+    }
+  </script>
+</body>
+</html>
